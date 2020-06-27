@@ -1,8 +1,8 @@
-let str: string = 'Hello, world!'
-let num: number = 20
-let bool: boolean = false // or true
-let obj: object = { name: 'Hello' }
-let arr: any[] = [1, 2, 3]
+let str = 'Hello, world!'
+let num = 20
+let bool = false // or true
+let obj = { name: 'Hello' }
+let arr = [1, 2, 3]
 
 // Operators
 let m = 1

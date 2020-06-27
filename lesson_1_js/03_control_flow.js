@@ -1,5 +1,5 @@
 // If Else Statements
-function biggerThanTen(num: number): boolean {
+function biggerThanTen(num) {
     if (num > 10) {
         return true
     } else {
@@ -11,15 +11,15 @@ let isBigger = biggerThanTen(30)
 
 console.log(isBigger)
 
-function shortHandBiggerThanTen(num: number): boolean {
+function shortHandBiggerThanTen(num) {
     return num > 10
 }
 
 console.log(shortHandBiggerThanTen(40))
 
 // Switch Case statement
-function getNumberofLegsFromTypeAnimal(animal: string): string {
-    let legs: string
+function getNumberofLegsFromTypeAnimal(animal) {
+    let legs
     switch (animal) {
         case 'dog':
             legs = 'four'
