@@ -1,7 +1,7 @@
 /**
  * isOdd merupakan fungsi yang menerima sebuah angka
  * dan mengembalikan sebuah boolean 'true' ketika angka itu ganjil
- *
+ * Hint: Pakai modulus
  */
 function isOdd(num) {
     // Modify code below -------------------------
@@ -13,7 +13,8 @@ function isOdd(num) {
 
 // Test Cases -- Don't modify
 
-import assert from 'assert'
+const assert = require('assert')
+
 function testIsOdd(n, want, f) {
     const got = f(n)
     try {
