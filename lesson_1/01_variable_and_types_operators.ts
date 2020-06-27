@@ -17,6 +17,11 @@ console.log('Current value of m - 1 is', m)
 m = m + (2 * 3) / 2
 console.log('Current value of m + (2 * 3) / 2 is', m)
 
+// Comparisons
+let ten = 10
+let twenty = 20
+console.log('Twenty bigger than ten?', twenty > ten)
+
 // Modulus returns the remaining of a division
 m = 100
 m = m % 3
