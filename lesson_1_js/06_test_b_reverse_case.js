@@ -11,7 +11,7 @@
  *
  * `CeBoK` menjadi `cEbOk`
  */
-function reverseCase(str: string): string {
+function reverseCase(str) {
     // Modify code below here -------------
     return ''
     // ------------------------------------
@@ -19,13 +19,9 @@ function reverseCase(str: string): string {
 
 // Test cases - Don't Modify
 
-import assert from 'assert'
+const assert = require('assert')
 
-function testReverseCase(
-    s: string,
-    want: string,
-    f: (s: string) => string
-): string {
+function testReverseCase(s, want, f) {
     const got = f(s)
     try {
         assert.equal(
@@ -35,8 +31,7 @@ function testReverseCase(
         )
         return ''
     } catch (e) {
-        const err = <Error>e
-        return err.message
+        return e.message
     }
 }
 

@@ -12,7 +12,7 @@
  * Note:
  * Jangan pakai inbuilt method javascript seperti `reverse()`, `split()`, `join()`
  */
-function isPalindrome(str: string): boolean {
+function isPalindrome(str) {
     // Modify here ----------------------------
     return false
     // ----------------------------------------
@@ -20,23 +20,19 @@ function isPalindrome(str: string): boolean {
 
 // Test Cases -- Don't modify
 
-import assert from 'assert'
-function testIsPalindrome(
-    s: string,
-    want: boolean,
-    f: (s: string) => boolean
-): string {
+const assert = require('assert')
+
+function testIsPalindrome(s, want, f) {
     const got = f(s)
     try {
-        assert.equal(
+        assert.strictEqual(
             got,
             want,
             `Expected isPalindrome('${s}') to return '${want}', but got '${got}' instead.`
         )
         return ''
     } catch (e) {
-        const err = <Error>e
-        return err.message
+        return e.message
     }
 }
 

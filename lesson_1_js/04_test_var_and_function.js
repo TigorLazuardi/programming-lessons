@@ -18,15 +18,14 @@ const assert = require('assert')
 function testIsOdd(n, want, f) {
     const got = f(n)
     try {
-        assert.equal(
+        assert.strictEqual(
             got,
             want,
             `Expected isOdd(${n}) to return '${want}', but got '${got}' instead.`
         )
         return ''
     } catch (err) {
-        const e = err
-        return e.message
+        return err.message
     }
 }
 
